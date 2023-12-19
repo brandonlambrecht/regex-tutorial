@@ -15,6 +15,10 @@ Here is the regular expression that will be broken down
 
      - `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
+Here is an example below:
+
+![Example](regex-example.png)
+
 ## Table of Contents
 
 ## Regex Components
