@@ -21,7 +21,30 @@ Here is an example below:
 
 ## Table of Contents
 
+- [Anchors](#anchors)
+- [Quantifiers](#quantifiers)
+- [Grouping Constructs](#grouping-constructs)
+- [Bracket Expressions](#bracket-expressions)
+- [Character Classes](#character-classes)
+- [The OR Operator](#the-or-operator)
+- [Flags](#flags)
+- [Character Escapes](#character-escapes)
+
 ## Regex Components
+
+`/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+
+^ : Declares the start of the string.
+
+([a-z0-9_\.-]+) : Capturing group for the username part of the email address. Includes all characters before the @ symbol. The use of the parentheses declares these characters a capturing group.
+
+([\da-z\.-]+): Capturing group for the domain name part of the email address:
+
+([a-z\.]{2,6}): Capturing group for the top-level domain (TLD):
+
+[a-z\.]{2,6}: Matches between 2 and 6 of the following characters: lowercase letters (a-z) or dots (.).
+
+$: Declares the end of the string.
 
 ### Anchors
 
