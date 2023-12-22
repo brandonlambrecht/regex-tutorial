@@ -38,9 +38,9 @@ Here is an example email below:
 
 - ([a-z0-9_\.-]+) : Capturing group for the username part of the email address. Includes all characters before the @ symbol. The use of the parentheses declares these characters a capturing group.
 
-- ([\da-z\.-]+): Capturing group for the domain name part of the email address:
+- ([\da-z\.-]+): Capturing group for the domain name part of the email address.
 
-- ([a-z\.]{2,6}): Capturing group for the top-level domain (TLD):
+- ([a-z\.]{2,6}): Capturing group for the top-level domain (TLD).
 
 - [a-z\.]{2,6}: Matches between 2 and 6 of the following characters: lowercase letters (a-z) or dots (.).
 
