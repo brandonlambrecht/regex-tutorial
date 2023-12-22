@@ -13,7 +13,7 @@ The regular expression being broken down in this repository is an email address 
 
 Here is the regular expression that will be broken down
 
-     - `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
+    - `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
 Here is an example below:
 
@@ -34,27 +34,41 @@ Here is an example below:
 
 `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/`
 
-^ : Declares the start of the string.
+- ^ : Declares the start of the string.
 
-([a-z0-9_\.-]+) : Capturing group for the username part of the email address. Includes all characters before the @ symbol. The use of the parentheses declares these characters a capturing group.
+- ([a-z0-9_\.-]+) : Capturing group for the username part of the email address. Includes all characters before the @ symbol. The use of the parentheses declares these characters a capturing group.
 
-([\da-z\.-]+): Capturing group for the domain name part of the email address:
+- ([\da-z\.-]+): Capturing group for the domain name part of the email address:
 
-([a-z\.]{2,6}): Capturing group for the top-level domain (TLD):
+- ([a-z\.]{2,6}): Capturing group for the top-level domain (TLD):
 
-[a-z\.]{2,6}: Matches between 2 and 6 of the following characters: lowercase letters (a-z) or dots (.).
+- [a-z\.]{2,6}: Matches between 2 and 6 of the following characters: lowercase letters (a-z) or dots (.).
 
-$: Declares the end of the string.
+- $: Declares the end of the string.
 
 ### Anchors
 
+- ^ : Declares the start of the string.
+- $ : Declares the end of the string.
+
 ### Quantifiers
+
+- +: Matches one or more occurrences of the preceding element.
+- {2,6}: Matches between 2 and 6 occurrences of the preceding element.
 
 ### Grouping Constructs
 
+- (...) (capturing groups): Used for grouping parts of the expression together for capturing and referencing. - ([a-z0-9_\.-]+) - ([\da-z\.-]+) - ([a-z\.]{2,6})
+
 ### Bracket Expressions
 
+- [a-z0-9_\.-]: Matches any single character that is a lowercase letter, digit, underscore, dot, or hyphen.
+- [\da-z\.-]: Matches any single character that is a digit, lowercase letter, dot, or hyphen.
+- [a-z\.]: Matches any single character that is a lowercase letter or a dot.
+
 ### Character Classes
+
+- \d: Matches any digit (equivalent to [0-9]).
 
 ### The OR Operator
 
